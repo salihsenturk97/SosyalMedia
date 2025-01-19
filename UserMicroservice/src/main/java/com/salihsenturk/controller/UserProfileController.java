@@ -30,4 +30,16 @@ public class UserProfileController {
         return ResponseEntity.ok(userProfileService.getAll());
     }
 
+
+
+    @GetMapping("/upper-name")
+    public ResponseEntity<String> upperName(String name){
+        return ResponseEntity.ok(userProfileService.upperName(name));
+    }
+
+    @PostMapping("/clear-cache")
+    public ResponseEntity<?> clearCache(@RequestParam String cacheName) {
+        userProfileService.clearCache(cacheName);
+        return ResponseEntity.ok("Cache cleared for: " + cacheName);
+    }
 }

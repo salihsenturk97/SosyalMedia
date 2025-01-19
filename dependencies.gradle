@@ -16,7 +16,9 @@ ext{
             springBootDataMongo         :"org.springframework.boot:spring-boot-starter-data-mongodb:${versions.springBoot}",
             springCloudConfig           :"org.springframework.cloud:spring-cloud-starter-config:${versions.springCloud}",
             springCloudConfigServer     :"org.springframework.cloud:spring-cloud-config-server:${versions.springCloud}",
-            springCloudConfigClient     :"org.springframework.cloud:spring-cloud-config-client:${versions.springCloud}"
+            springCloudConfigClient     :"org.springframework.cloud:spring-cloud-config-client:${versions.springCloud}",
+            springBootDataRedis         :"org.springframework.boot:spring-boot-starter-data-redis:${versions.springBoot}"
+
 
 
 
